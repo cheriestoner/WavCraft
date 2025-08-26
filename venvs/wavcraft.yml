@@ -245,5 +245,3 @@ dependencies:
     - xformers==0.0.20
     - yarl==1.9.2
     - zipp==3.16.2
-prefix: /homes/jl009/.conda/envs/AudioEditor
-

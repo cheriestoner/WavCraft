@@ -1,7 +1,15 @@
-conda env create -f venvs/audiocraft.yml
-conda env create -f venvs/audioldm.yml
-conda env create -f venvs/audiosr.yml
-conda env create -f venvs/wavcraft.yml
+mamba env create -f venvs/audiocraft.yml --no-pip -y
+pip install -r audiocraft.txt -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+
+mamba env create -f venvs/audioldm.yml --no-pip -y
+pip install -r audioldm.txt -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+
+mamba env create -f venvs/audiosr.yml --no-pip -y
+pip install -r audiosr.txt -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+
+mamba env create -f venvs/wavcraft.yml --no-pip -y
+pip install -r wavcraft.txt -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+
 # Prepare third-party repos
 # Comment some of them if they are unnecessary
 mkdir ext/
